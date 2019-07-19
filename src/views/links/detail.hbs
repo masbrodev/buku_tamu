@@ -1,0 +1,34 @@
+<div class="container p-4">
+    <div class="row">
+
+        <div class="col-md-4 mx-auto">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h4 class="m-0 font-weight-bold text-center">{{link.Nama}}</h6>
+                </div>
+                <div class="card-body text-center">
+                    <h5>
+                  Alamat : {{link.Alamat}}
+                  <hr>
+                  Tujuan : {{link.Alamat}}
+                  <hr>
+                  Keperluan : {{link.Keperluan}}
+                  <hr>
+                  Pesan : {{link.Pesan}}
+                  <hr>
+                  Time : 
+                  {{link.Created_at}}
+                  </h5>
+          <hr>
+          <a href="/links" class="btn btn-secondary">Kembali</a>
+                    <hr>
+          <a href="/links/pesan/{{link.ID}}" class="btn btn-success">Kirim Pesan</a>
+           <a href="/links/edit/{{link.ID}}" class="btn btn-warning">Edit</a>
+          <a href="/links/delete/{{link.ID}}" class="btn btn-danger">Hapus</a>
+                </div>
+              </div>
+            </div>
+
+    </div>
+</div>
+

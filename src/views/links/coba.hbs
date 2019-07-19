@@ -1,0 +1,38 @@
+<br>
+<div class="table-responsive">
+  <table class="table table-bordered container">
+
+    <thead>
+      <tr>
+        <th>Waktu</th>
+        <th>Nama</th>
+        <th>Alamat</th>
+        <th>Tujuan</th>
+        <th>Keperluan</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+{{#each links}}
+    <tbody>
+      <tr>
+        <td>{{ Created_at }}</td>
+        <td>{{Nama}}</td>
+        <td>{{Alamat}}</td>
+        <td>{{Tujuan}}</td>
+        <td>{{Keperluan}}</td>
+        <td>
+          <a href="/links/edit/{{ID}}" class="btn btn-secondary">Edit</a>
+          <a href="/links/delete/{{ID}}" class="btn btn-danger">Hapus</a>
+        </td>
+      </tr>
+    <tbody>
+            {{else}}
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body text-center">
+                    <p>Data Belum Ada</p>
+                    <a href="/" class="btn btn-primary">Ke Halaman Utama</a>               
+                </div>
+          </div>
+  </table>
+</div>
+ {{/each}}   

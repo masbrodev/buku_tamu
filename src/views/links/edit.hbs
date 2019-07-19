@@ -1,0 +1,30 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/links/edit/{{link.ID}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Nama" placeholder="Nama" value="{{link.Nama}}" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Alamat" placeholder="Alamat" value="{{link.Alamat}}">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Tujuan" placeholder="Tujuan" value="{{link.Tujuan}}">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Keperluan" placeholder="Keperluan"
+                            value="{{link.Created_at}}">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
